@@ -1,0 +1,119 @@
+.ShopList{
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+    width: 90vw;
+    /*height: 90vh;*/
+    margin: 5vh auto 5vh auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 25%,25%,25%,25%;
+    grid-template-rows: 25%,25%,25%,25%;
+    grid-template-areas:
+    "box1 box1 box2 box3"
+    "box1 box1 box4 box3"
+    "box5 box6 box7 box7"
+    "box8 box9 box10 box11"
+}
+
+.ShopList .grid-box{
+    /*background: rgb(104, 63, 199);*/
+    transition: all 250ms;
+    /*font-size: 5rem;*/
+    color: rgb(0, 0, 0);
+    font-family: "Aeroport";
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    animation: fadein 0.5s ease-out normal backwards;
+    height: 100%;
+}
+
+.grid-box > img{
+    position: relative;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.grid-box .Bbig{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 85pt;
+    font-family: "Aeroport";
+    font-weight: bold;
+    padding-left: 10px;
+}
+.grid-box .Bsmall{
+    position: absolute;
+    padding-top: 130px;
+    padding-left: 15px;
+    font-size: 35pt;
+    font-family: "Aeroport";
+    font-weight: bold;
+}
+.grid-box .Sbig{
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 45pt;
+    font-family: "Aeroport";
+    font-weight: bold;
+    padding-left: 10px;
+}
+.grid-box .Ssmall{
+    position: absolute;
+    padding-top: 70px;
+    padding-left: 15px;
+    font-size: 25pt;
+    font-family: "Aeroport";
+    font-weight: bold;
+}
+
+.grid-box > img:hover{
+    background-color: aquamarine;
+    opacity: 20%;
+    transition: all 0.3s;
+}
+
+.ShopList .block1{grid-area: box1; animation-delay: 0;}
+.ShopList .block2{grid-area: box2; animation-delay: 100ms;}
+.ShopList .block3{grid-area: box3; animation-delay: 200ms;}
+.ShopList .block4{grid-area: box4; animation-delay: 200ms;}
+.ShopList .block5{grid-area: box5; animation-delay: 100ms;}
+.ShopList .block6{grid-area: box6; animation-delay: 200ms;}
+.ShopList .block7{grid-area: box7; animation-delay: 300ms;}
+.ShopList .block8{grid-area: box8; animation-delay: 200ms;}
+.ShopList .block9{grid-area: box9; animation-delay: 400ms;}
+.ShopList .block10{grid-area: box10; animation-delay: 500ms;}
+.ShopList .block11{grid-area: box11; animation-delay: 600ms;}
+
+@keyframes fadein{
+    0% {transform: scale(0);}
+    80% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+@media (max-width: 1300px){
+    .ShopList{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto,auto,auto,auto;
+    }
+    .grid-box .Bbig{
+        font-size: 50pt;
+        padding-left: 5px;
+    }
+    .grid-box .Bsmall{
+        padding-top: 65px;
+        padding-left: 7px;
+        font-size: 25pt;
+    }
+    .grid-box .Sbig{
+        font-size: 25pt;
+        padding-left: 5px;
+    }
+    .grid-box .Ssmall{
+        padding-top: 35px;
+        padding-left: 7px;
+        font-size: 12pt;
+    }
+}

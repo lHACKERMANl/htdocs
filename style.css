@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /*min-height: 500vh;*/
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 60px;
+    z-index: 10;
+}
+video{
+    position: relative;
+    z-index:0;
+}
+
+.VideoH{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    z-index: 2;
+    font-size: 90pt; /*90pt*/
+    text-transform: uppercase;
+    font-family: 'Aeroport', "Gill Sans";
+    color: #fff;
+    line-height: 1.1; 
+}
+
+.VideoH a{
+    text-align: center;
+    position: relative;
+    left: 30%;
+    height: 50px;
+    width: 200px;
+    background: none;
+    border:0.1em solid #FFFFFF;
+    font-family: "Aeroport","Gill Sans";
+    transition: all 0.2s;
+    text-decoration: none;
+    color: #fff;
+    font-size: 34pt;
+    padding:0.35em 1.2em;
+}
+
+
+.VideoH a:hover{
+    background: #FFF;
+    color:#000;
+}
+
+header.sticky{
+    padding: 15px 25px;
+    background: #fff;
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+header .Logo{
+    float: left;
+    font-family: 'Aeroport',"Gill Sans";
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 1px 15px;
+}
+
+header ul{
+    font-family: 'Aeroport',"Gill Sans";
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 1px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15pt;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transform: 0.6s;
+}
+
+header.sticky  a.Logo,
+header.sticky ul li a{
+    color: #000;
+}
+
+video{
+    position: relative;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+.BigH{
+    font-size: 64pt;
+    text-align: center;
+    padding-top: 60px;
+    text-transform: uppercase;
+    font-family: 'Aeroport',"Gill Sans";
+    font-weight: 600;
+}
+
+.Encore{
+    position: absolute;
+    opacity: 0;
+}
+
+#Event{
+    transition: all 0.3s;
+}
+
+footer{
+    
+    left: 0; bottom: 0; 
+    padding: 10px;
+    background: black;
+    color: #fff; 
+    width: 100%;
+}
+
+footer > p{
+    position: absolute;
+    font-family: 'Aeroport',"Gill Sans";
+    text-transform: uppercase;
+    font-size: 14pt;
+    padding: 10pt;
+}
+
+footer > img{
+    padding: 10pt;
+    padding-left: 30pt;
+    height: 100px;
+}
+footer .wrapper{
+    text-align: center;
+}
+
+footer .wrapper > ul > li{
+    list-style: none;
+    margin: 10px 10px;
+    display: inline-block;
+    padding: 20px 20px;
+    color: #FFF;
+    border: 1px solid #fff;
+    size: 500px;
+}
+
+/*@media (min-width: 1000px) and (max-width : 1100px){
+    .VideoH{
+        top: 15%;
+        left: 6%;
+        font-size: 59pt;
+    }
+    .VideoH a{
+        left: 28%;
+        font-size: 27pt;
+    }
+    .BigH{
+        font-size: 56pt;
+    }
+}
+
+@media (max-width: 1000px){
+    .VideoH{
+        top: 8%;
+        left: 11%;
+        font-size: 74pt;
+    }
+    .VideoH a{
+        left: 32%;
+        font-size: 28pt;
+    }
+    .BigH{
+        font-size: 48pt;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width : 1200px) and (max-width : 1450px)  { 
+    .VideoH{
+        top: 40%;
+        left: 16%;
+        font-size: 67pt;
+    }
+    .VideoH a{
+        left: 27%;
+        font-size: 30pt;
+    }
+    .BigH{
+        font-size: 65pt;
+        padding-top: 30px;
+    }
+}  
+*/

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    background: white;
+}
+.outer:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  
+  .inner {
+    font-family: 'Pacifico', cursive;
+    font-size: 39pt;
+    color: #000000;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .inner_s{
+    font-family: 'Oswald', cursive;
+    font-size: 32pt;
+    color: #000000;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* добавим горизонтальное центрирование */
+  .outer {
+    text-align: center;
+    height:100%;
+    width: 100%;
+    border-radius: 0px;
+    border: 2px solid #000000; 
+  }

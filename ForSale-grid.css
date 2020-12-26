@@ -1,0 +1,56 @@
+.TypeOfParty{
+    width: 90vw;
+    margin: 5vh auto 5vh;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 25%,25%,25%;
+    grid-template-rows: 25%,25%,25%;
+    grid-template-areas:
+    "box1 box2 box3"
+}
+
+.TypeOfParty .Boxes{
+    justify-self: center;
+    width: 500px;
+    height:500px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(1,1,1,0) 100%);
+}
+
+.Boxes{
+    height: 100px;
+    width: 100px;
+}
+
+.Boxes > img{
+    position: relative;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    width: 500px;
+    height:500px;
+}
+
+.Boxes > img:hover{
+    opacity: 60%;
+    transition: 0.1s;
+}
+
+.Boxes > img:checked{
+    opacity: 60%;
+}
+
+.pForPict{
+    opacity: 100%;
+    position: absolute;
+    top: 210px;
+    font-size: 64pt;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    padding-left: 20px;
+    z-index: 20;
+    color: white;
+}
+
+.TypeOfParty .box1{grid-area: box1;}
+.TypeOfParty .box2{grid-area: box2;}
+.TypeOfParty .box3{grid-area: box3;}

@@ -1,0 +1,9 @@
+@font-face {
+font-family: Oswald;
+src: url(../Oswald-VariableFont_wght.ttf) format('truetype'); 
+}
+
+@font-face{
+    font-family: Aeroport;
+    src: url(../Aeroport.otf);
+}

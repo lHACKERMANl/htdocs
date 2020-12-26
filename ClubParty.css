@@ -1,0 +1,110 @@
+.modal-cont{
+    width: 800px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.cont{
+    
+}
+
+.close{
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    left: 744px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(close.svg);
+    text-align: right;
+}
+
+.close-small{
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(close.svg);
+    text-align: right;
+}
+
+.modal-cont > h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+.modal-cont > img{
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 40%;
+}
+
+.modal-cont > form > input[type=text]{
+    display: block;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    /*border-bottom: 2px solid #000000;*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 300px;
+    height: 40px;
+    outline:none
+}
+
+.modal-cont > form > input[type=submit]{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    /*border-bottom: 2px solid #000000;*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: grey; 
+    background-color: aliceblue; 
+    width: 200px;
+    height: 40px;
+    transition: 0.6s all ease;
+    outline:none
+}
+
+.modal-cont > form > input[type=submit]:hover{
+    background: black;
+    color: white;
+    transition: all 0.6s ease;
+}
+
+/*------------------------------*/
+@media (max-width: 1000px){
+      .close{
+        width: 50px;
+        height: 50px;
+        left: 744px;
+        top: 8px;
+    }
+    .modal-cont > form > input[type="text"]{
+        height: 55px;
+        font-size: 22pt;
+        font-family: 'Oswald', sans-serif;;
+        padding-left: 15px;
+    }
+    .modal-cont > form > input[type="submit"]{
+        width: 224px;
+        height: 60px;
+    }
+    .close-small{
+        width: 45px;
+        height: 45px;
+    }
+}
